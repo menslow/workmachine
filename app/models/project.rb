@@ -11,4 +11,11 @@ class Project < ActiveRecord::Base
     presence: true, 
     numericality: { only_integer: true }
 
+  after_initialize :set_defaults
+
+  private
+    def set_defaults
+      self.active ||= true
+    end
+
 end

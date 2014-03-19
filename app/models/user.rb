@@ -12,4 +12,17 @@ class User < ActiveRecord::Base
   validates :display_name, 
     length: { maximum: 250, too_long: "must have at most %{count} characters" }
 
+  before_save :downcase_email
+
+  after_initialize :set_defaults
+
+  private
+
+    def downcase_email
+      self.email = self.email.downcase
+    end
+
+    def set_defaults
+      self.display_name ||= self.name
+    end
 end
