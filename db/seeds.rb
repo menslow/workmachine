@@ -9,7 +9,7 @@
 #rails g model User name:string display_name:string email:string
 #rails g model Client name:string
 #rails g model Project name:string description:text active:boolean client_id:integer
-#rails g model Task name:string start:date due:date user_id:integer
+#rails g model Note project_id:integer user_id:integer name:string start:date due:date
 
 
 User.create(name: "Michael Enslow", display_name: "menslow", email: "michael@mistermachine.com")
