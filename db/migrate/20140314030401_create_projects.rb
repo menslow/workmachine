@@ -4,7 +4,6 @@ class CreateProjects < ActiveRecord::Migration
       t.string :name
       t.text :description
       t.boolean :active
-      t.integer :client_id
 
       t.timestamps
     end
