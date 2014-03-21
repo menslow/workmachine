@@ -25,4 +25,7 @@ Project.create(name: "Creature Shop Web Design and Development", description: "D
 Project.create(name: "Design Consultation", description: "Consultation on design and development of Ngaged Web App", active: true)
 Project.create(name: "Mommy Bloggers Design", description: "Photoshop design mockups for mommyblogger.com", active: true)
 
-
+Note.create(project_id: 2, user_id: 1, name: "Check with Jen about Cello Maundru status", start: Date.today, due: Date.tomorrow)
+Note.create(project_id: 3, user_id: 1, name: "Deploy CSS updates to test server", start: Date.today, due: Date.tomorrow)
+Note.create(project_id: 5, user_id: 1, name: "Track down issue with 21 errors from Compas", start: Date.yesterday, due: Date.tomorrow)
+Note.create(project_id: 7, user_id: 1, name: "Create new case study content", start: Date.today, due: Date.tomorrow)
