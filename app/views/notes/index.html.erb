@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Project</th>
+      <th>Project ID</th>
       <th>User</th>
       <th>Name</th>
       <th>Start</th>
@@ -22,9 +22,9 @@
         <td><%= note.name %></td>
         <td><%= note.start %></td>
         <td><%= note.due %></td>
-        <td><%= link_to 'Show', note %></td>
-        <td><%= link_to 'Edit', edit_note_path(note) %></td>
-        <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', [@project, note] %></td>
+        <td><%= link_to 'Edit', edit_project_note_path(@project, note) %></td>
+        <td><%= link_to 'Destroy', [@project, note], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Note', new_note_path %>
+<%= link_to 'New Note', new_project_note_path(@project) %>
