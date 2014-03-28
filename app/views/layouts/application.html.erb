@@ -13,7 +13,17 @@
 
   <body>
 
-    <%= yield %>
+    <div class="container">
+
+      <%= render 'shared/header' %>
+
+        <%= yield %>
+
+      <%= render 'shared/footer' %>
+
+    </div>
+
     <%= javascript_include_tag "application" %>
+
   </body>
 </html>
