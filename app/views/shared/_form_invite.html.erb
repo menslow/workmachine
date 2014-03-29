@@ -11,11 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <fieldset>
+    <div class="field-container">
+      <%= f.label :email %><br>
+      <%= f.text_field :email %>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  </fieldset>
+
 <% end %>
