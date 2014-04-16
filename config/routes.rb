@@ -1,5 +1,6 @@
 Workmachine::Application.routes.draw do
 
+  devise_for :users
   resources :invites
 
   resources :users
