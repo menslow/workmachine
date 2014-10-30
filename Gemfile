@@ -6,8 +6,8 @@ gem 'rails', '4.1.5'
 # multithreaded webserver
 gem 'puma'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use postgresql as the database for Active Record
+gem 'pg'
 
 # Use Foundation by Zurb for the front-end framework
 gem 'foundation-rails'
