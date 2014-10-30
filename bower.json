@@ -1,0 +1,44 @@
+{
+  "lib": {
+    "name": "bower-rails generated lib assets",
+    "dependencies": {
+      // "threex"      : "git@github.com:rharriso/threex.git",
+      // "gsvpano.js"  : "https://github.com/rharriso/GSVPano.js/blob/master/src/GSVPano.js"
+    }
+  },
+  "vendor": {
+    "name": "workmachine",
+    "version": "0.0.1",
+    "main": [
+      "scss/foundation.scss",
+      "js/angular/app.js"
+    ],
+    "dependencies": {
+      "notify.js": "~1.2.3",
+      "viewport-units-buggyfill": "~0.4.1",
+      "tether": "~0.6.5",
+      "fastclick": "~1.0.3",
+      "angular": "~1.2.25",
+      "ui-router": "~0.2.11",
+      "angular-animate": "~1.2.25",
+      "jquery": "~2.1.1"
+    },
+    "homepage": "http://workmachine.mistermachineshop.com",
+    "description": "Workmachine is a responsive, Angular-powered web app from Mister Machine.",
+    "keywords": [
+      "web apps",
+      "responsive design",
+      "angular"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "client",
+      "build",
+      "docs"
+    ]
+  }
+}
