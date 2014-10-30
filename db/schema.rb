@@ -13,12 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140405002850) do
 
-  create_table "inites", force: true do |t|
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "invites", force: true do |t|
     t.string   "email"
     t.datetime "created_at"
