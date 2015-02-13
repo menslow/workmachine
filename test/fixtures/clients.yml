@@ -2,6 +2,18 @@
 
 one:
   name: MyString
+  address: MyText
+  phone: MyString
+  website: MyString
+  twitter: MyString
+  facebook: MyString
+  background: MyText
 
 two:
   name: MyString
+  address: MyText
+  phone: MyString
+  website: MyString
+  twitter: MyString
+  facebook: MyString
+  background: MyText

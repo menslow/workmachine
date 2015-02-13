@@ -29,3 +29,8 @@ Note.create(project_id: 2, user_id: 1, name: "Check with Jen about Cello Maundru
 Note.create(project_id: 3, user_id: 1, name: "Deploy CSS updates to test server", start: Date.today, due: Date.tomorrow)
 Note.create(project_id: 5, user_id: 1, name: "Track down issue with 21 errors from Compas", start: Date.yesterday, due: Date.tomorrow)
 Note.create(project_id: 7, user_id: 1, name: "Create new case study content", start: Date.today, due: Date.tomorrow)
+
+Client.create(name: "Favorite Medium", address: "1970 Broadway, Suite 850, Oakland, CA 94612", phone: "415-484-4366", website: "favoritemedium.com", twitter: "favoritemediums", facebook: "facebook.com/favoritemedium")
+Client.create(name: "Exygy", address: "4053 18th Street San Francisco, California 94114", phone: "415-992-7251", website: "eygy.com", twitter: "exygy")
+Client.create(name: "Landscape", address: "428 Waller Street San Francisco, CA 94117", phone: "415-419-4867", website: "thisislandscape.com", twitter: "LandscapeSF", facebook: "facebook.com/Exygy")
+
