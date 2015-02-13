@@ -2,9 +2,17 @@ class ClientsController < ApplicationController
   respond_to :html, :xml, :json
   before_action :set_client, only: [:show, :edit, :update, :destroy]
 
+  after_action :set_access_control_headers
+
+  def set_access_control_headers
+    headers['Access-Control-Allow-Origin'] = "http://localhost:8080"
+    headers['Access-Control-Request-Method'] = %w{GET POST OPTIONS}.join(",")
+  end
+
   def index
-    @clients = Client.all
-    respond_with(@clients)
+    # @clients = Client.all
+    # respond_with(@clients)
+    render json: Client.all
   end
 
   def show
