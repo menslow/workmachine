@@ -10,8 +10,8 @@ class ClientsController < ApplicationController
   end
 
   def index
-    # @clients = Client.all
-    # respond_with(@clients)
+    #@clients = Client.all
+    #respond_with(@clients)
     render json: Client.all
   end
 
@@ -27,11 +27,26 @@ class ClientsController < ApplicationController
   def edit
   end
 
+  # def create
+  #   @client = Client.new(client_params)
+  #   @client.save
+  #   respond_with(@client)
+  # end
+
   def create
     @client = Client.new(client_params)
-    @client.save
-    respond_with(@client)
+    respond_to do |format|
+      if @client.save
+        flash[:notice] = 'Client was successfully created.'
+        format.html { redirect_to(@client) }
+        format.json { render json: @client }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @client }
+      end
+    end
   end
+
 
   def update
     @client.update(client_params)
